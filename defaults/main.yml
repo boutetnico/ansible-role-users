@@ -1,0 +1,11 @@
+---
+users_groups: []
+# - name: group1
+#   gid: 33
+#   system: true
+
+users_users: []
+# - name: user1
+#   group: group1
+#   create_home: true
+#   home: /home/user1
