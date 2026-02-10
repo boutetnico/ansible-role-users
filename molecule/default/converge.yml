@@ -8,9 +8,22 @@
         - name: group1
           gid: 1234
           system: true
+        - name: group2
+          gid: 1235
 
       users_users:
         - name: user1
           group: group1
           create_home: true
           home: /home/user1
+        - name: user2
+          group: group2
+          create_home: true
+          home: /home/user2
+          uid: 2000
+          groups:
+            - group1
+        - name: user3
+          group: group2
+          create_home: false
+          system: true
