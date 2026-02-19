@@ -4,7 +4,7 @@
     gid: "{{ item.gid | d(omit) }}"
     name: "{{ item.name }}"
     state: present
-    system: "{{ user.system | d(omit) }}"
+    system: "{{ item.system | d(omit) }}"
   loop: "{{ users_groups }}"
 
 - name: Ensure users exist
